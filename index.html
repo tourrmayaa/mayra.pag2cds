@@ -14,8 +14,29 @@ scale=1.0">
     <header class="cabecalho-itens">
     
     <img class="cabecalho_imagem" src="logo_nossa_escola.png" alt="Logo da
-    
     Página">
+
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrossel | Escola Modelo</title>
+
+  <section class="carrossel">
+    <div class="slides" id="slides">
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=1200&q=60');"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600326146107-7f4b2c39e1a4?auto=format&fit=crop&w=1200&q=60');"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1200&q=60');"></div>
+    </div>
+
+    <button class="btn prev" onclick="mudarSlide(-1)">&#10094;</button>
+    <button class="btn next" onclick="mudarSlide(1)">&#10095;</button>
+  </section>
+
+  <div class="dots" id="dots">
+  </div>
+
     
     <h1 class="titulo_site">Nossa Escola</h1>
     <div class="sociais">

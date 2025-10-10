@@ -96,17 +96,6 @@ body {
   background-color: #333;
 }
 
-/* Responsivo */
-(max-width: 600px) {
-  .carrossel {
-    height: 250px;
-  }
-  .slide {
-    height: 250px;
-  }
-}
-
-
     .titulo_site{
     padding: 50px;
     text-align: center;

@@ -26,6 +26,44 @@
     align-items: center;
     }
 
+/* Reset básico para remover margens e paddings padrão dos navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o elemento que queremos fixar no topo */
+.cabecalho-fixo {
+    /* **PROPRIEDADES CRUCIAIS** para fixar no topo: */
+    position: fixed; /* Tira o elemento do fluxo normal e o fixa na viewport */
+    top: 0;          /* Posiciona no topo da área visível do navegador */
+    left: 0;         /* Alinha à esquerda */
+    
+    /* Estilos visuais */
+    width: 100%;                  /* Ocupa toda a largura */
+    background-color: #333;       /* Cor de fundo escura */
+    color: white;                 /* Cor do texto branca */
+    padding: 15px 20px;           /* Espaçamento interno */
+    text-align: center;           /* Centraliza o texto horizontalmente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    z-index: 1000;                /* Garante que fique acima de outros elementos */
+    
+    /* Defina a altura se quiser um valor exato ou deixe que o padding defina */
+    height: 80px; /* Exemplo de altura fixa (pode variar) */
+}
+
+/* **PROPRIEDADE CRUCIAL** para evitar sobreposição */
+/* É necessário adicionar uma margem ou padding no conteúdo principal 
+   para que ele não fique 'por baixo' do elemento fixo. */
+.conteudo-principal {
+    /* A margem deve ser IGUAL ou MAIOR que a altura do seu elemento fixo. */
+    margin-top: 80px; /* Use a mesma altura definida em .cabecalho-fixo */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;

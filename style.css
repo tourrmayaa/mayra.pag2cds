@@ -34,7 +34,7 @@ body {
 
     .titulo_site{
     padding: 60px;
-    text-align: center;
+   justify-content: center;
     width: 60%;
     font: 35px;
     }

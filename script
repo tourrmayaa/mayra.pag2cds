@@ -3,7 +3,7 @@ const slides = document.querySelector("#slides");
 const totalSlides = slides.children.length;
 const dotsContainer = document.getElementById("dots");
 
-// Cria as bolinhas dinamicamente//
+// Cria as bolinhas dinamicamente //
 for (let i = 0; i < totalSlides; i++) {
   const dot = document.createElement("span");
   dot.classList.add("dot");
@@ -11,7 +11,7 @@ for (let i = 0; i < totalSlides; i++) {
   dotsContainer.appendChild(dot);
 }
 
-// Define o primeiro dot como ativo
+// Define o primeiro dot como ativo //
 document.querySelectorAll(".dot")[0].classList.add("active");
 
 function mostrarSlide(index) {

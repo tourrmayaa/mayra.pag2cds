@@ -1,0 +1,3 @@
+// Você pode adicionar interações aqui no futuro!
+// Por exemplo, abrir uma página com mais informações sobre cada curso.
+console.log("Página de cursos carregada com sucesso!");

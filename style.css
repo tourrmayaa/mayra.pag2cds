@@ -5,7 +5,7 @@ body {
   color: #333;
 }
 
-/* CABEÇALHO */
+/* Cabeçalho */
 header {
   background: linear-gradient(135deg, #0077b6, #00b4d8);
   color: white;
@@ -19,7 +19,7 @@ header h1 {
   margin-bottom: 10px;
 }
 
-/* SEÇÃO DE CURSOS */
+/* Cards dos Cursos */
 .courses {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -55,7 +55,6 @@ header h1 {
 .course-content h2 {
   color: #0077b6;
   margin-bottom: 10px;
-  font-size: 1.5em;
 }
 
 .course-content button {
@@ -73,7 +72,7 @@ header h1 {
   background: #00b4d8;
 }
 
-/* PÁGINAS INDIVIDUAIS */
+/* Página de cada curso */
 .course-page {
   max-width: 900px;
   margin: 50px auto;
@@ -93,8 +92,9 @@ header h1 {
   color: #0077b6;
 }
 
-.course-page p {
-  line-height: 1.6;
+.course-page ul {
+  list-style: disc;
+  margin-left: 20px;
 }
 
 .back-button {
@@ -111,6 +111,7 @@ header h1 {
   background: #00b4d8;
 }
 
+/* Rodapé */
 footer {
   background-color: #0077b6;
   color: white;
